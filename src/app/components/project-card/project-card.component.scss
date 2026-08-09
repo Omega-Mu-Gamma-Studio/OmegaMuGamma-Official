@@ -11,14 +11,12 @@
   background-size: 100% 100%, 280% 280%;
   animation: neon-border-shift 9s ease infinite;
   color: inherit;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
-  filter: saturate(0.55) brightness(1.02);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 
   &:hover {
     text-decoration: none;
     transform: translateY(-3px);
     box-shadow: var(--shadow-card);
-    filter: saturate(1) brightness(1);
     animation-duration: 4.5s;
   }
 }
