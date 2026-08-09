@@ -1,0 +1,105 @@
+.disc {
+  position: relative;
+  width: min(560px, 92vw);
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.disc__ring {
+  position: absolute;
+  inset: 6%;
+  border-radius: 50%;
+  border: 1.5px dashed var(--line-border);
+  animation: disc-spin 70s linear infinite;
+}
+
+.disc:hover .disc__ring {
+  animation-play-state: paused;
+}
+
+@keyframes disc-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.disc__hub {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  width: 34%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.disc__hub-mark {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.disc__hub-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.disc__item {
+  position: absolute;
+  translate: -50% -50%;
+  width: 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: var(--radius-md);
+  background: var(--bg);
+  border: 1px solid var(--line-border);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+  color: var(--ink-primary);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    text-decoration: none;
+    translate: -50% -50%;
+    transform: scale(1.08);
+    border-color: var(--accent);
+    box-shadow: 0 12px 28px color-mix(in srgb, var(--accent) 20%, transparent);
+  }
+}
+
+.disc__icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.disc__label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+@media (max-width: 560px) {
+  .disc__item {
+    width: 84px;
+    padding: 0.55rem 0.4rem;
+  }
+
+  .disc__label {
+    font-size: 0.66rem;
+  }
+}

@@ -1,0 +1,19 @@
+<header class="navbar">
+  <div class="navbar__inner container">
+    <a class="navbar__brand" routerLink="/">
+      <span class="navbar__mark">Ω</span>
+      <span class="navbar__name">Omega Mu Gamma Studio</span>
+    </a>
+
+    <app-search-bar class="navbar__search" />
+
+    <nav class="navbar__links">
+      <a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">
+        Home
+      </a>
+      <a href="https://github.com/Omega-Mu-Gamma-Studio/OmegaMuGamma-Official" target="_blank" rel="noopener">
+        GitHub
+      </a>
+    </nav>
+  </div>
+</header>

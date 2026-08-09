@@ -1,0 +1,20 @@
+<div class="disc" role="navigation" aria-label="Browse project categories">
+  <div class="disc__ring" aria-hidden="true"></div>
+
+  <div class="disc__hub">
+    <span class="disc__hub-mark">Ω</span>
+    <span class="disc__hub-label">Browse</span>
+  </div>
+
+  @for (item of items(); track item.category.id) {
+    <a
+      class="disc__item"
+      [routerLink]="['/category', item.category.id]"
+      [style.left]="item.left"
+      [style.top]="item.top"
+    >
+      <span class="disc__icon" aria-hidden="true">{{ item.category.icon }}</span>
+      <span class="disc__label">{{ item.category.name }}</span>
+    </a>
+  }
+</div>

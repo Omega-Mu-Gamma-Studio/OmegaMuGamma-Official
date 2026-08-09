@@ -1,0 +1,16 @@
+<a class="project-card" [routerLink]="['/category', categoryId(), 'project', project().id]">
+  <div class="project-card__top">
+    <h3 class="project-card__name">{{ project().name }}</h3>
+    <span class="project-card__status" [style.--status-color]="project().statusColor">
+      {{ project().status }}
+    </span>
+  </div>
+
+  <p class="project-card__description">{{ project().description }}</p>
+
+  <ul class="project-card__tech">
+    @for (item of project().tech; track item) {
+      <li>{{ item }}</li>
+    }
+  </ul>
+</a>

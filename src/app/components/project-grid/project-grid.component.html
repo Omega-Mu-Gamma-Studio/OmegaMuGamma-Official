@@ -1,0 +1,9 @@
+@if (projects().length > 0) {
+  <div class="project-grid">
+    @for (project of projects(); track project.id) {
+      <app-project-card [project]="project" [categoryId]="categoryId()" />
+    }
+  </div>
+} @else {
+  <p class="project-grid__empty">No projects found.</p>
+}

@@ -1,0 +1,30 @@
+<div class="search-bar">
+  <svg class="search-bar__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm10 2-5.6-5.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+  </svg>
+
+  <input
+    type="text"
+    placeholder="Search projects, tech, or categories..."
+    [ngModel]="query()"
+    (ngModelChange)="query.set($event)"
+    (focus)="isFocused.set(true)"
+    aria-label="Search projects"
+  />
+
+  @if (showResults()) {
+    <ul class="search-bar__results">
+      @if (results().length === 0) {
+        <li class="search-bar__empty">No projects match "{{ query() }}"</li>
+      }
+      @for (hit of results(); track hit.project.id) {
+        <li>
+          <button type="button" (click)="select(hit.category.id, hit.project.id)">
+            <span class="search-bar__result-name">{{ hit.project.name }}</span>
+            <span class="search-bar__result-category">{{ hit.category.icon }} {{ hit.category.name }}</span>
+          </button>
+        </li>
+      }
+    </ul>
+  }
+</div>

@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global design tokens - see README.md "Design Philosophy" */
+:root {
+  --ink-primary: #0b0d14;
+  --ink-soft: #4a4f5e;
+  --text-muted: #7a8092;
+  --line-border: #e7e8ee;
+  --bg: #ffffff;
+  --bg-alt: #f6f7fb;
+  --accent: #2b4cff;
+  --accent-dim: #eef1ff;
+
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --shadow-card: 0 1px 2px rgba(11, 13, 20, 0.04), 0 8px 24px rgba(11, 13, 20, 0.06);
+  --max-content: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--ink-primary);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+.container {
+  max-width: var(--max-content);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+::selection {
+  background: var(--accent-dim);
+  color: var(--accent);
+}

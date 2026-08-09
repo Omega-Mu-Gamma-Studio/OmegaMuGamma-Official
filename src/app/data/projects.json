@@ -1,0 +1,187 @@
+{
+  "categories": [
+    {
+      "id": "chan-series",
+      "name": "Chan Series",
+      "icon": "🐾",
+      "description": "Mascot-guided learning companions that walk students through core CS concepts step by step.",
+      "projects": [
+        {
+          "id": "recur-chan",
+          "name": "Recur-chan",
+          "status": "Live",
+          "statusColor": "#2B4CFF",
+          "description": "An animated mascot that visualizes call stacks and base cases to make recursion click for beginners.",
+          "url": "https://example.com/recur-chan",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/recur-chan",
+          "tech": ["Angular", "D3.js", "TypeScript"],
+          "image": "assets/images/recur-chan.jpg"
+        },
+        {
+          "id": "sort-chan",
+          "name": "Sort-chan",
+          "status": "Complete",
+          "statusColor": "#2B4CFF",
+          "description": "Step-through visual walkthroughs of classic sorting algorithms narrated by a friendly mascot guide.",
+          "url": "https://example.com/sort-chan",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/sort-chan",
+          "tech": ["Angular", "RxJS", "SCSS"],
+          "image": "assets/images/sort-chan.jpg"
+        },
+        {
+          "id": "graph-chan",
+          "name": "Graph-chan",
+          "status": "In Development",
+          "statusColor": "#7A8092",
+          "description": "Interactive BFS/DFS and shortest-path explorer designed for a first data structures course.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/graph-chan",
+          "tech": ["Angular", "Canvas API"],
+          "image": "assets/images/graph-chan.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cs-tools",
+      "name": "CS Tools",
+      "icon": "💻",
+      "description": "Practical utilities that support day-to-day computer science coursework.",
+      "projects": [
+        {
+          "id": "bigo-bench",
+          "name": "BigO Bench",
+          "status": "Live",
+          "statusColor": "#2B4CFF",
+          "description": "Runs student-submitted functions against growing inputs and plots empirical time complexity.",
+          "url": "https://example.com/bigo-bench",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/bigo-bench",
+          "tech": ["Angular", "Node.js", "Chart.js"],
+          "image": "assets/images/bigo-bench.jpg"
+        },
+        {
+          "id": "gitlab-for-class",
+          "name": "GitLab for Class",
+          "status": "Content-Complete",
+          "statusColor": "#63A6FF",
+          "description": "A guided sandbox that teaches branching, merge conflicts, and pull requests without risking real repos.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/gitlab-for-class",
+          "tech": ["Angular", "isomorphic-git"],
+          "image": "assets/images/gitlab-for-class.jpg"
+        }
+      ]
+    },
+    {
+      "id": "engineering-tools",
+      "name": "Engineering Tools",
+      "icon": "⚙️",
+      "description": "Simulation and analysis tools built for engineering coursework across disciplines.",
+      "projects": [
+        {
+          "id": "circuit-sim",
+          "name": "CircuitSim Lite",
+          "status": "Live",
+          "statusColor": "#2B4CFF",
+          "description": "A drag-and-drop breadboard simulator for teaching basic circuit analysis and Ohm's law.",
+          "url": "https://example.com/circuit-sim",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/circuit-sim-lite",
+          "tech": ["Angular", "SVG", "TypeScript"],
+          "image": "assets/images/circuit-sim.jpg"
+        },
+        {
+          "id": "truss-lab",
+          "name": "Truss Lab",
+          "status": "In Development",
+          "statusColor": "#7A8092",
+          "description": "A statics sandbox for building and load-testing truss structures with real-time stress visualization.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/truss-lab",
+          "tech": ["Angular", "Three.js"],
+          "image": "assets/images/truss-lab.jpg"
+        }
+      ]
+    },
+    {
+      "id": "creative-tools",
+      "name": "Creative Tools",
+      "icon": "🎨",
+      "description": "Playful, design-forward tools that pair studio mascots with creative coding exercises.",
+      "projects": [
+        {
+          "id": "pixel-den",
+          "name": "Pixel Den",
+          "status": "Complete",
+          "statusColor": "#2B4CFF",
+          "description": "A lightweight pixel-art editor used to teach students how raster graphics and color palettes work.",
+          "url": "https://example.com/pixel-den",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/pixel-den",
+          "tech": ["Angular", "Canvas API"],
+          "image": "assets/images/pixel-den.jpg"
+        },
+        {
+          "id": "sound-loom",
+          "name": "Sound Loom",
+          "status": "Content-Complete",
+          "statusColor": "#63A6FF",
+          "description": "A block-based audio sequencer that introduces loops, variables, and events through music.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/sound-loom",
+          "tech": ["Angular", "Web Audio API"],
+          "image": "assets/images/sound-loom.jpg"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "icon": "🔬",
+      "description": "Publications and prototypes from the studio's research on mascot-guided learning outcomes.",
+      "projects": [
+        {
+          "id": "mascot-efficacy-study",
+          "name": "Mascot Efficacy Study",
+          "status": "Complete",
+          "statusColor": "#2B4CFF",
+          "description": "A published study measuring concept retention gains when CS1 material is delivered by a guide character.",
+          "url": "https://example.com/mascot-efficacy-study",
+          "tech": ["Research", "Education"],
+          "image": "assets/images/mascot-efficacy-study.jpg"
+        },
+        {
+          "id": "engagement-telemetry",
+          "name": "Engagement Telemetry Toolkit",
+          "status": "In Development",
+          "statusColor": "#7A8092",
+          "description": "An anonymized, opt-in telemetry layer for measuring where students disengage across the toolkit.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/engagement-telemetry",
+          "tech": ["Angular", "RxJS"],
+          "image": "assets/images/engagement-telemetry.jpg"
+        }
+      ]
+    },
+    {
+      "id": "studio",
+      "name": "Studio",
+      "icon": "🏛️",
+      "description": "Information about Omega Mu Gamma Studio itself: this website, brand assets, and studio operations.",
+      "projects": [
+        {
+          "id": "studio-website",
+          "name": "Studio Website",
+          "status": "In Development",
+          "statusColor": "#7A8092",
+          "description": "This site — the central hub for browsing every project the studio has shipped or is building.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/OmegaMuGamma-Official",
+          "tech": ["Angular", "Angular Material", "SCSS"],
+          "image": "assets/images/studio-website.jpg"
+        },
+        {
+          "id": "brand-kit",
+          "name": "Brand Kit",
+          "status": "Complete",
+          "statusColor": "#2B4CFF",
+          "description": "Logos, color tokens, and typography guidelines used across every studio project and mascot.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/brand-kit",
+          "tech": ["Design", "Figma"],
+          "image": "assets/images/brand-kit.jpg"
+        }
+      ]
+    }
+  ]
+}

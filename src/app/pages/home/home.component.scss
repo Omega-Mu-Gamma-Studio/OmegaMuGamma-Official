@@ -1,0 +1,78 @@
+.hero {
+  padding-block: 3.5rem 2rem;
+  text-align: center;
+  max-width: 720px;
+}
+
+.hero__eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 0.75rem;
+}
+
+.hero__subtitle {
+  font-size: 1.05rem;
+  margin: 0 auto;
+}
+
+.disc-section {
+  padding-block: 1rem 3rem;
+}
+
+.categories {
+  padding-block: 2rem 4rem;
+}
+
+.categories__title {
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.categories__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.categories__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 1.25rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line-border);
+  background: var(--bg-alt);
+  color: var(--ink-primary);
+  text-align: center;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: var(--bg);
+  }
+}
+
+.categories__icon {
+  font-size: 1.6rem;
+}
+
+.categories__name {
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.categories__count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}

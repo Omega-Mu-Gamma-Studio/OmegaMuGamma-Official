@@ -1,0 +1,33 @@
+@if (category(); as cat) {
+  <section class="category-header container">
+    <a class="category-header__back" routerLink="/">&larr; All categories</a>
+    <div class="category-header__row">
+      <span class="category-header__icon">{{ cat.icon }}</span>
+      <div>
+        <h1 class="category-header__title">{{ cat.name }}</h1>
+        <p class="category-header__description">{{ cat.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="category-grid container">
+    <app-project-grid [projects]="cat.projects" [categoryId]="cat.id" />
+  </section>
+
+  @if (otherCategories().length > 0) {
+    <section class="category-more container">
+      <h2>Other categories</h2>
+      <div class="category-more__list">
+        @for (other of otherCategories(); track other.id) {
+          <a [routerLink]="['/category', other.id]">{{ other.icon }} {{ other.name }}</a>
+        }
+      </div>
+    </section>
+  }
+} @else {
+  <section class="category-missing container">
+    <h1>Category not found</h1>
+    <p>We couldn't find that category.</p>
+    <a routerLink="/">&larr; Back to all categories</a>
+  </section>
+}

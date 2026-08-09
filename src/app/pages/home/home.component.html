@@ -1,0 +1,25 @@
+<section class="hero container">
+  <p class="hero__eyebrow">Omega Mu Gamma Studio</p>
+  <h1 class="hero__title">Mascot-guided learning tools for CS &amp; engineering</h1>
+  <p class="hero__subtitle">
+    Explore {{ projectCount() }} projects across {{ categories().length }} categories -
+    from interactive mascots that teach recursion to full lab simulators.
+  </p>
+</section>
+
+<section class="disc-section container">
+  <app-disc />
+</section>
+
+<section class="categories container">
+  <h2 class="categories__title">All categories</h2>
+  <div class="categories__grid">
+    @for (category of categories(); track category.id) {
+      <a class="categories__card" [routerLink]="['/category', category.id]">
+        <span class="categories__icon">{{ category.icon }}</span>
+        <span class="categories__name">{{ category.name }}</span>
+        <span class="categories__count">{{ category.projects.length }} projects</span>
+      </a>
+    }
+  </div>
+</section>

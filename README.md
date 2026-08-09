@@ -2,7 +2,7 @@
 
 The official studio website — a digital hub for our educational software, research, and creative projects.
 
-Built with Angular 18, this website serves as the central showcase for Omega Mu Gamma Studio's portfolio of mascot-guided CS and engineering education tools, research publications, and studio information.
+Built with Angular 21, this website serves as the central showcase for Omega Mu Gamma Studio's portfolio of mascot-guided CS and engineering education tools, research publications, and studio information.
 
 🔗 **Live Demo:** [Coming Soon]
 📦 **Repository:** [GitHub](https://github.com/Omega-Mu-Gamma-Studio/OmegaMuGamma-Official)
@@ -20,7 +20,7 @@ Omega Mu Gamma Studio designs and builds mascot-guided learning tools for comput
 | Project Detail | Comprehensive project pages with descriptions, tech stacks, and links to live demos and GitHub repositories |
 | Global Search | Search across all projects by name, description, or technology stack |
 | Responsive Design | Works seamlessly on desktop, tablet, and mobile devices |
-| Angular Material | Premium UI components for a polished, professional look |
+| Design System | Hand-built SCSS components on a shared token palette for a polished, professional look |
 
 ## 📂 Project Structure
 
@@ -110,10 +110,10 @@ ng test
 
 | Layer | Technology | Purpose |
 |---|---|---|
-| Framework | Angular 18 | Modern, enterprise-grade web framework |
-| UI Library | Angular Material | Premium, accessible UI components |
+| Framework | Angular 21 | Modern, enterprise-grade web framework |
+| UI | Custom SCSS component library | Lightweight, accessible UI built on shared design tokens |
 | Styling | SCSS | Maintainable, modular styles |
-| State Management | RxJS + Signals | Reactive state and data flow |
+| State Management | Signals | Reactive state and data flow |
 | Routing | Angular Router | Client-side navigation |
 | Animations | Angular Animations | Smooth transitions and interactions |
 | Hosting | Vercel / Netlify | Static site deployment |
