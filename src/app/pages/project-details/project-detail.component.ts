@@ -1,10 +1,11 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ProjectService } from '../../services/project.service';
+import { ScrollFocusDirective } from '../../directives/scroll-focus.directive';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [RouterLink],
+  imports: [RouterLink, ScrollFocusDirective],
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss',
 })

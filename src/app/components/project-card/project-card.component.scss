@@ -2,18 +2,24 @@
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
-  padding: 1.25rem;
-  background: var(--bg);
-  border: 1px solid var(--line-border);
+  padding: calc(1.25rem - 1px);
   border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(115deg, var(--neon-a), var(--neon-b), var(--neon-c), var(--neon-a)) border-box;
+  background-size: 100% 100%, 280% 280%;
+  animation: neon-border-shift 9s ease infinite;
   color: inherit;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+  filter: saturate(0.55) brightness(1.02);
 
   &:hover {
     text-decoration: none;
     transform: translateY(-3px);
     box-shadow: var(--shadow-card);
-    border-color: color-mix(in srgb, var(--accent) 35%, var(--line-border));
+    filter: saturate(1) brightness(1);
+    animation-duration: 4.5s;
   }
 }
 

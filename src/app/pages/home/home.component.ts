@@ -2,10 +2,11 @@ import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { DiscComponent } from '../../components/disc/disc.component';
 import { ProjectService } from '../../services/project.service';
+import { ScrollFocusDirective } from '../../directives/scroll-focus.directive';
 
 @Component({
   selector: 'app-home',
-  imports: [DiscComponent, RouterLink],
+  imports: [DiscComponent, RouterLink, ScrollFocusDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

@@ -2,10 +2,11 @@ import { Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ProjectGridComponent } from '../../components/project-grid/project-grid.component';
 import { ProjectService } from '../../services/project.service';
+import { ScrollFocusDirective } from '../../directives/scroll-focus.directive';
 
 @Component({
   selector: 'app-category',
-  imports: [ProjectGridComponent, RouterLink],
+  imports: [ProjectGridComponent, RouterLink, ScrollFocusDirective],
   templateUrl: './category.component.html',
   styleUrl: './category.component.scss',
 })

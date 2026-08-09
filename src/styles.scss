@@ -11,6 +11,9 @@
   --accent-dim: #eef1ff;
   --amber: #f5a623;
   --amber-dim: #fff8ec;
+  --neon-a: #ff5a36;
+  --neon-b: #ff2f92;
+  --neon-c: #ff8f3d;
 
   --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -77,4 +80,41 @@ button {
 ::selection {
   background: var(--accent-dim);
   color: var(--accent);
+}
+
+/* ── Neon shifting border (signature element) ──────────────
+   Two-layer gradient trick: inner layer paints the card's own
+   background (padding-box), outer layer is an animated
+   orange→pink→orange gradient (border-box). Only the border
+   ring shows color; the animation just slides the gradient. */
+@keyframes neon-border-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Scroll-focus: section nearest viewport center sharpens
+   and lifts slightly; sections above/below blur and recede.
+   Driven by a directive that sets --focus-* custom properties. */
+[data-scroll-focus] {
+  transform: scale(var(--focus-scale, 1));
+  filter: blur(var(--focus-blur, 0px));
+  opacity: var(--focus-opacity, 1);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.35s ease-out, opacity 0.35s ease-out;
+  will-change: transform, filter;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-scroll-focus] {
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

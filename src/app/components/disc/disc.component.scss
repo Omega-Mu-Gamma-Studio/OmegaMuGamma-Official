@@ -64,21 +64,27 @@
   flex-direction: column;
   align-items: center;
   gap: 0.3rem;
-  padding: 0.75rem 0.5rem;
+  padding: calc(0.75rem - 1px) calc(0.5rem - 1px);
   border-radius: var(--radius-md);
-  background: var(--bg);
-  border: 1px solid var(--line-border);
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(var(--line-border), var(--line-border)) border-box;
   box-shadow: var(--shadow-card);
   text-align: center;
   color: var(--ink-primary);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 
   &:hover {
     text-decoration: none;
     translate: -50% -50%;
     transform: scale(1.08);
-    border-color: var(--accent);
-    box-shadow: 0 12px 28px color-mix(in srgb, var(--accent) 20%, transparent);
+    background:
+      linear-gradient(var(--bg), var(--bg)) padding-box,
+      linear-gradient(115deg, var(--neon-a), var(--neon-b), var(--neon-c), var(--neon-a)) border-box;
+    background-size: 100% 100%, 280% 280%;
+    animation: neon-border-shift 4.5s ease infinite;
+    box-shadow: 0 12px 28px color-mix(in srgb, var(--neon-b) 22%, transparent);
   }
 }
 

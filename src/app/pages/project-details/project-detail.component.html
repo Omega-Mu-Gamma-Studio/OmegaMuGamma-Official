@@ -4,7 +4,7 @@
       &larr; {{ category()?.name }}
     </a>
 
-    <div class="project-detail__hero">
+    <div class="project-detail__hero" appScrollFocus>
       <div class="project-detail__hero-img">
         <span class="project-detail__hero-placeholder">{{ category()?.icon }}</span>
       </div>
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="project-detail__meta">
+    <div class="project-detail__meta" appScrollFocus>
       <div class="project-detail__meta-item">
         <span class="project-detail__meta-label">Category</span>
         <span class="project-detail__meta-value">{{ category()?.name }}</span>

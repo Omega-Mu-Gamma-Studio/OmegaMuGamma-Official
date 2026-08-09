@@ -22,9 +22,13 @@
 
 .project-detail__hero-img {
   aspect-ratio: 4/3;
-  background: var(--bg-alt);
-  border: 1px solid var(--line-border);
+  border: 2px solid transparent;
   border-radius: var(--radius-md);
+  background:
+    linear-gradient(var(--bg-alt), var(--bg-alt)) padding-box,
+    linear-gradient(115deg, var(--neon-a), var(--neon-b), var(--neon-c), var(--neon-a)) border-box;
+  background-size: 100% 100%, 280% 280%;
+  animation: neon-border-shift 10s ease infinite;
   display: flex;
   align-items: center;
   justify-content: center;

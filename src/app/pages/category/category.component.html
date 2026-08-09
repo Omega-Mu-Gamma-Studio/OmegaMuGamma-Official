@@ -1,5 +1,5 @@
 @if (category(); as cat) {
-  <section class="category-header container">
+  <section class="category-header container" appScrollFocus>
     <a class="category-header__back" routerLink="/">&larr; All categories</a>
     <div class="category-header__row">
       <span class="category-header__icon">{{ cat.icon }}</span>
@@ -10,12 +10,12 @@
     </div>
   </section>
 
-  <section class="category-grid container">
+  <section class="category-grid container" appScrollFocus>
     <app-project-grid [projects]="cat.projects" [categoryId]="cat.id" />
   </section>
 
   @if (otherCategories().length > 0) {
-    <section class="category-more container">
+    <section class="category-more container" appScrollFocus>
       <h2>Other categories</h2>
       <div class="category-more__list">
         @for (other of otherCategories(); track other.id) {
