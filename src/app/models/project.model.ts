@@ -7,7 +7,10 @@ export type ProjectStatus =
   | 'Live'
   | 'Complete'
   | 'Content-Complete'
-  | 'In Development';
+  | 'In Development'
+  | 'Under Review'
+  | 'Published'
+  | 'In Progress';
 
 export interface Project {
   id: string;

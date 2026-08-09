@@ -156,6 +156,9 @@ All project metadata lives in `src/app/data/projects.json`. The schema is:
 | Complete | All features and content shipped |
 | Content-Complete | Core content done, some polish/art/features pending |
 | In Development | Actively being built |
+| In Progress | Early-stage draft or exploratory work |
+| Under Review | Submitted and awaiting peer review, patent review, or publication decision |
+| Published | Publicly released (paper, patent, or book) |
 
 ## 🎨 Design Philosophy
 

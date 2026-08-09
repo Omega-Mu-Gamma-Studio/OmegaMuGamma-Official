@@ -1,185 +1,311 @@
 {
   "categories": [
     {
-      "id": "chan-series",
+      "id": "chan",
       "name": "Chan Series",
-      "icon": "🐾",
-      "description": "Mascot-guided learning companions that walk students through core CS concepts step by step.",
+      "icon": "🧑‍🏫",
+      "description": "Mascot-led programming tutors — 7 languages, 75+ lessons each.",
       "projects": [
         {
-          "id": "recur-chan",
-          "name": "Recur-chan",
+          "id": "java-chan",
+          "name": "Java-Chan",
           "status": "Live",
-          "statusColor": "#2B4CFF",
-          "description": "An animated mascot that visualizes call stacks and base cases to make recursion click for beginners.",
-          "url": "https://example.com/recur-chan",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/recur-chan",
-          "tech": ["Angular", "D3.js", "TypeScript"],
-          "image": "assets/images/recur-chan.jpg"
+          "statusColor": "#22C55E",
+          "description": "Anime-guided Java tutor with 75 lessons, gamified progression, and unlockable cosmetics.",
+          "url": "https://java-chan.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/Java-Chan",
+          "tech": ["React 19", "Vite", "Zustand", "Framer Motion"],
+          "image": "assets/images/java-chan.jpg"
         },
         {
-          "id": "sort-chan",
-          "name": "Sort-chan",
-          "status": "Complete",
-          "statusColor": "#2B4CFF",
-          "description": "Step-through visual walkthroughs of classic sorting algorithms narrated by a friendly mascot guide.",
-          "url": "https://example.com/sort-chan",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/sort-chan",
-          "tech": ["Angular", "RxJS", "SCSS"],
-          "image": "assets/images/sort-chan.jpg"
+          "id": "kotlin-chan",
+          "name": "Kotlin-Chan",
+          "status": "Live",
+          "statusColor": "#22C55E",
+          "description": "Anime-guided Kotlin and Jetpack Compose tutor for Android development — 75 lessons.",
+          "url": "https://kotlin-chan.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/Kotlin-Chan",
+          "tech": ["React 19", "Vite", "Zustand", "Framer Motion"],
+          "image": "assets/images/kotlin-chan.jpg"
         },
         {
-          "id": "graph-chan",
-          "name": "Graph-chan",
-          "status": "In Development",
-          "statusColor": "#7A8092",
-          "description": "Interactive BFS/DFS and shortest-path explorer designed for a first data structures course.",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/graph-chan",
-          "tech": ["Angular", "Canvas API"],
-          "image": "assets/images/graph-chan.jpg"
+          "id": "python-chan",
+          "name": "Python-Chan",
+          "status": "Live",
+          "statusColor": "#22C55E",
+          "description": "Anime-guided Python tutor with 225 lessons across 3 courses — Foundations, Data Science, and Machine Learning.",
+          "url": "https://python-chan.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/Python-Chan",
+          "tech": ["React 19", "Vite", "Zustand", "Framer Motion"],
+          "image": "assets/images/python-chan.jpg"
+        },
+        {
+          "id": "rust-chan",
+          "name": "Rust-Chan",
+          "status": "Live",
+          "statusColor": "#22C55E",
+          "description": "Anime-guided Rust tutor with 75 lessons — build a CLI tool and ship it to crates.io.",
+          "url": "https://rust-chan.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/Rust-Chan",
+          "tech": ["React 19", "Vite", "Zustand", "Framer Motion"],
+          "image": "assets/images/rust-chan.jpg"
+        },
+        {
+          "id": "go-chan",
+          "name": "Go-Chan",
+          "status": "Live",
+          "statusColor": "#22C55E",
+          "description": "Anime-guided Go tutor with 75 lessons — build and deploy a backend API.",
+          "url": "https://go-chan.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/Go-Chan",
+          "tech": ["React 19", "Vite", "Zustand", "Framer Motion"],
+          "image": "assets/images/go-chan.jpg"
+        },
+        {
+          "id": "sharp-chan",
+          "name": "Sharp-Chan",
+          "status": "Live",
+          "statusColor": "#22C55E",
+          "description": "Anime-guided C# and Unity tutor — build a game, not just talk about it.",
+          "url": "https://sharp-chan.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/Sharp-Chan",
+          "tech": ["React 19", "Vite", "Zustand", "Framer Motion"],
+          "image": "assets/images/sharp-chan.jpg"
+        },
+        {
+          "id": "plusplus-chan",
+          "name": "PlusPlus-Chan",
+          "status": "Live",
+          "statusColor": "#22C55E",
+          "description": "Anime-guided C++ tutor — learn C++ by building a text-based RPG.",
+          "url": "https://plusplus-chan.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/PlusPlus-Chan",
+          "tech": ["React 19", "Vite", "Zustand", "Framer Motion"],
+          "image": "assets/images/plusplus-chan.jpg"
         }
       ]
     },
     {
-      "id": "cs-tools",
+      "id": "cs",
       "name": "CS Tools",
-      "icon": "💻",
-      "description": "Practical utilities that support day-to-day computer science coursework.",
+      "icon": "🧪",
+      "description": "Algorithm visualizers, logic simulators, and computer architecture tools.",
       "projects": [
         {
-          "id": "bigo-bench",
-          "name": "BigO Bench",
-          "status": "Live",
-          "statusColor": "#2B4CFF",
-          "description": "Runs student-submitted functions against growing inputs and plots empirical time complexity.",
-          "url": "https://example.com/bigo-bench",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/bigo-bench",
-          "tech": ["Angular", "Node.js", "Chart.js"],
-          "image": "assets/images/bigo-bench.jpg"
+          "id": "seeds",
+          "name": "SeeDS",
+          "status": "Content-Complete",
+          "statusColor": "#F59E0B",
+          "description": "3D data structure visualizer with a full Story Mode — 22 lessons, 10 tutors, 7 locations, 9 NPCs.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/SeeDS",
+          "tech": ["React 19", "Vite", "Konva", "Zustand"],
+          "image": "assets/images/seeds.jpg"
         },
         {
-          "id": "gitlab-for-class",
-          "name": "GitLab for Class",
+          "id": "gatelab",
+          "name": "GateLab",
           "status": "Content-Complete",
-          "statusColor": "#63A6FF",
-          "description": "A guided sandbox that teaches branching, merge conflicts, and pull requests without risking real repos.",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/gitlab-for-class",
-          "tech": ["Angular", "isomorphic-git"],
-          "image": "assets/images/gitlab-for-class.jpg"
+          "statusColor": "#F59E0B",
+          "description": "Digital logic circuit simulator — 41 lessons, sci-fi ship mechanic framing, in-world PDA.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/GateLab",
+          "tech": ["React 19", "Vite", "Konva", "Zustand"],
+          "image": "assets/images/gatelab.jpg"
+        },
+        {
+          "id": "archvisor",
+          "name": "ArchVisor",
+          "status": "Content-Complete",
+          "statusColor": "#F59E0B",
+          "description": "Computer Organization & Architecture learning platform — 23 sub-tools, gamification layer.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/ArchVisor",
+          "tech": ["React 19", "Vite", "D3.js", "Zustand"],
+          "image": "assets/images/archvisor.jpg"
+        },
+        {
+          "id": "kmapx",
+          "name": "KMapX",
+          "status": "Complete",
+          "statusColor": "#22C55E",
+          "description": "Boolean expression simplifier powered by Quine-McCluskey algorithm — no dependencies.",
+          "url": "https://kmapx.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/KMapX",
+          "tech": ["Vanilla JS", "HTML", "CSS"],
+          "image": "assets/images/kmapx.jpg"
+        },
+        {
+          "id": "disc-math",
+          "name": "Disc-Math",
+          "status": "Complete",
+          "statusColor": "#22C55E",
+          "description": "Propositional calculus lab — parse once, read through five lenses: Truth Table, Equivalence, Conditional Forms, Normal Forms, Inference.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/Disc-Math",
+          "tech": ["TypeScript", "React", "Vite"],
+          "image": "assets/images/disc-math.jpg"
+        },
+        {
+          "id": "basix",
+          "name": "Basix",
+          "status": "Complete",
+          "statusColor": "#22C55E",
+          "description": "Number systems notebook — base conversions, binary arithmetic, complements, codes, and IEEE-754.",
+          "url": "https://basix-calc.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/Basix",
+          "tech": ["Vanilla JS", "HTML", "CSS"],
+          "image": "assets/images/basix.jpg"
         }
       ]
     },
     {
-      "id": "engineering-tools",
+      "id": "engineering",
       "name": "Engineering Tools",
       "icon": "⚙️",
-      "description": "Simulation and analysis tools built for engineering coursework across disciplines.",
+      "description": "Interactive simulators for mechanical engineering coursework.",
       "projects": [
         {
-          "id": "circuit-sim",
-          "name": "CircuitSim Lite",
-          "status": "Live",
-          "statusColor": "#2B4CFF",
-          "description": "A drag-and-drop breadboard simulator for teaching basic circuit analysis and Ohm's law.",
-          "url": "https://example.com/circuit-sim",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/circuit-sim-lite",
-          "tech": ["Angular", "SVG", "TypeScript"],
-          "image": "assets/images/circuit-sim.jpg"
+          "id": "eg-suite",
+          "name": "EG Suite",
+          "status": "Complete",
+          "statusColor": "#22C55E",
+          "description": "3D Engineering Graphics simulator — projections, sections, and isometric views.",
+          "url": "https://eg-suite.vercel.app",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/EG-Suite",
+          "tech": ["Three.js", "Vanilla JS"],
+          "image": "assets/images/eg-suite.jpg"
         },
         {
-          "id": "truss-lab",
-          "name": "Truss Lab",
+          "id": "evade-os",
+          "name": "Evade-OS",
+          "status": "Content-Complete",
+          "statusColor": "#F59E0B",
+          "description": "Kernel-ka's Bunker — a narrative OS course game with 5 realms and 56 lessons.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/Evade-OS",
+          "tech": ["React 19", "Vite", "Zustand", "Framer Motion"],
+          "image": "assets/images/evade-os.jpg"
+        },
+        {
+          "id": "thermos",
+          "name": "ThermOS",
           "status": "In Development",
-          "statusColor": "#7A8092",
-          "description": "A statics sandbox for building and load-testing truss structures with real-time stress visualization.",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/truss-lab",
-          "tech": ["Angular", "Three.js"],
-          "image": "assets/images/truss-lab.jpg"
+          "statusColor": "#EF4444",
+          "description": "Virtual professor for Engineering Thermodynamics — being redesigned as a lesson-based architecture.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/ThermOS",
+          "tech": ["React 19", "Vite", "MDX", "Zustand"],
+          "image": "assets/images/thermos.jpg"
         }
       ]
     },
     {
-      "id": "creative-tools",
+      "id": "creative",
       "name": "Creative Tools",
-      "icon": "🎨",
-      "description": "Playful, design-forward tools that pair studio mascots with creative coding exercises.",
+      "icon": "🎵",
+      "description": "Music and creative education tools.",
       "projects": [
         {
-          "id": "pixel-den",
-          "name": "Pixel Den",
-          "status": "Complete",
-          "statusColor": "#2B4CFF",
-          "description": "A lightweight pixel-art editor used to teach students how raster graphics and color palettes work.",
-          "url": "https://example.com/pixel-den",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/pixel-den",
-          "tech": ["Angular", "Canvas API"],
-          "image": "assets/images/pixel-den.jpg"
-        },
-        {
-          "id": "sound-loom",
-          "name": "Sound Loom",
-          "status": "Content-Complete",
-          "statusColor": "#63A6FF",
-          "description": "A block-based audio sequencer that introduces loops, variables, and events through music.",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/sound-loom",
-          "tech": ["Angular", "Web Audio API"],
-          "image": "assets/images/sound-loom.jpg"
+          "id": "blockbeats",
+          "name": "BlockBeats",
+          "status": "In Development",
+          "statusColor": "#EF4444",
+          "description": "Block-based music production tutor — learn theory and DAW workflows by dragging, dropping, and layering audio.",
+          "repo": "https://github.com/Omega-Mu-Gamma-Studio/BlockBeats",
+          "tech": ["React 19", "Vite", "Tone.js", "Konva", "Zustand"],
+          "image": "assets/images/blockbeats.jpg"
         }
       ]
     },
     {
       "id": "research",
       "name": "Research",
-      "icon": "🔬",
-      "description": "Publications and prototypes from the studio's research on mascot-guided learning outcomes.",
+      "icon": "📚",
+      "description": "Papers, patents, and publications from the studio.",
       "projects": [
         {
-          "id": "mascot-efficacy-study",
-          "name": "Mascot Efficacy Study",
-          "status": "Complete",
-          "statusColor": "#2B4CFF",
-          "description": "A published study measuring concept retention gains when CS1 material is delivered by a guide character.",
-          "url": "https://example.com/mascot-efficacy-study",
+          "id": "sam-thesis",
+          "name": "SAM Thesis",
+          "status": "Under Review",
+          "statusColor": "#F59E0B",
+          "description": "Student Academic Mentor — thesis on educational technology and adaptive learning.",
           "tech": ["Research", "Education"],
-          "image": "assets/images/mascot-efficacy-study.jpg"
+          "image": "assets/images/sam-thesis.jpg"
         },
         {
-          "id": "engagement-telemetry",
-          "name": "Engagement Telemetry Toolkit",
-          "status": "In Development",
-          "statusColor": "#7A8092",
-          "description": "An anonymized, opt-in telemetry layer for measuring where students disengage across the toolkit.",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/engagement-telemetry",
-          "tech": ["Angular", "RxJS"],
-          "image": "assets/images/engagement-telemetry.jpg"
+          "id": "cnt-patent",
+          "name": "CNT-QGTC Patent",
+          "status": "Under Review",
+          "statusColor": "#F59E0B",
+          "description": "Polymer informatics Tg prediction — with Dr. Amala Pratibha Janet.",
+          "tech": ["Materials Science", "Machine Learning"],
+          "image": "assets/images/cnt-patent.jpg"
+        },
+        {
+          "id": "anomaly-detection",
+          "name": "Anomaly Detection",
+          "status": "Under Review",
+          "statusColor": "#F59E0B",
+          "description": "Anomaly detection in industrial fluid networks — with Aaron Felix J.",
+          "tech": ["Industrial AI", "Time Series"],
+          "image": "assets/images/anomaly-detection.jpg"
+        },
+        {
+          "id": "copenhagen-cosmology",
+          "name": "On Copenhagen Cosmology",
+          "status": "Published",
+          "statusColor": "#22C55E",
+          "description": "Philosophy paper on quantum interpretation — PhilArchive.",
+          "tech": ["Philosophy", "Quantum Physics"],
+          "image": "assets/images/copenhagen-cosmology.jpg"
+        },
+        {
+          "id": "cognitive-functions",
+          "name": "Mathematical Foundations of Cognitive Functions",
+          "status": "In Progress",
+          "statusColor": "#EF4444",
+          "description": "Draft — exploring the mathematical basis of cognition.",
+          "tech": ["Cognitive Science", "Mathematics"],
+          "image": "assets/images/cognitive-functions.jpg"
+        },
+        {
+          "id": "dreamer-novel",
+          "name": "The Dreamer, The Executive and The Russians",
+          "status": "Published",
+          "statusColor": "#22C55E",
+          "description": "Novel — KDP, June 2026.",
+          "tech": ["Fiction"],
+          "image": "assets/images/dreamer-novel.jpg"
         }
       ]
     },
     {
       "id": "studio",
       "name": "Studio",
-      "icon": "🏛️",
-      "description": "Information about Omega Mu Gamma Studio itself: this website, brand assets, and studio operations.",
+      "icon": "🏢",
+      "description": "About the studio, the team, and our story.",
       "projects": [
         {
-          "id": "studio-website",
-          "name": "Studio Website",
-          "status": "In Development",
-          "statusColor": "#7A8092",
-          "description": "This site — the central hub for browsing every project the studio has shipped or is building.",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/OmegaMuGamma-Official",
-          "tech": ["Angular", "Angular Material", "SCSS"],
-          "image": "assets/images/studio-website.jpg"
+          "id": "about",
+          "name": "About Us",
+          "status": "Live",
+          "statusColor": "#22C55E",
+          "description": "Omega Mu Gamma Studio — a student-built studio designing mascot-guided CS and engineering education software.",
+          "tech": ["Education", "Open Source"],
+          "image": "assets/images/about.jpg"
         },
         {
-          "id": "brand-kit",
-          "name": "Brand Kit",
-          "status": "Complete",
-          "statusColor": "#2B4CFF",
-          "description": "Logos, color tokens, and typography guidelines used across every studio project and mascot.",
-          "repo": "https://github.com/Omega-Mu-Gamma-Studio/brand-kit",
-          "tech": ["Design", "Figma"],
-          "image": "assets/images/brand-kit.jpg"
+          "id": "team",
+          "name": "The Team",
+          "status": "Live",
+          "statusColor": "#22C55E",
+          "description": "Alberto Felix A (Creative Lead), Aaron Mcgeo (Co-Developer), Ashikha Brigid (Co-Developer).",
+          "tech": ["People"],
+          "image": "assets/images/team.jpg"
+        },
+        {
+          "id": "contact",
+          "name": "Contact",
+          "status": "Live",
+          "statusColor": "#22C55E",
+          "description": "Reach out for repos, demos, or collaboration.",
+          "tech": ["Email"],
+          "image": "assets/images/contact.jpg"
         }
       ]
     }

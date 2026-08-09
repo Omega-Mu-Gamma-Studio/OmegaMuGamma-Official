@@ -18,7 +18,7 @@ describe('ProjectService', () => {
   });
 
   it('should find a known category by id', () => {
-    expect(service.getCategoryById('chan-series')?.name).toBe('Chan Series');
+    expect(service.getCategoryById('chan')?.name).toBe('Chan Series');
   });
 
   it('should return undefined for an unknown category', () => {
@@ -26,8 +26,12 @@ describe('ProjectService', () => {
   });
 
   it('should search across name, description, and tech', () => {
-    const results = service.search('recursion');
-    expect(results.some((hit) => hit.project.id === 'recur-chan')).toBe(true);
+    const results = service.search('kotlin');
+    expect(results.some((hit) => hit.project.id === 'kotlin-chan')).toBe(true);
+  });
+
+  it('should find a project nested under its category', () => {
+    expect(service.getProject('cs', 'kmapx')?.name).toBe('KMapX');
   });
 
   it('should return no results for a blank query', () => {
