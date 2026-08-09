@@ -14,6 +14,24 @@ export class HomeComponent {
 
   readonly categories = computed(() => this.projectService.getCategories());
   readonly projectCount = computed(() =>
-    this.categories().reduce((total, category) => total + category.projects.length, 0)
+    this.categories().reduce((total, cat) => total + cat.projects.length, 0)
   );
+
+  // Pick one standout project from 4 different categories
+  readonly featured = computed(() => {
+    const cats = this.categories();
+    const picks = [
+      { catId: 'chan', projId: 'python-chan', icon: '🧑‍🏫' },
+      { catId: 'cs', projId: 'seeds', icon: '🌱' },
+      { catId: 'engineering', projId: 'gatelab', icon: '⚡' },
+      { catId: 'creative', projId: 'blockbeats', icon: '🎵' },
+    ];
+
+    return picks.flatMap(({ catId, projId, icon }) => {
+      const cat = cats.find(c => c.id === catId);
+      const proj = cat?.projects.find(p => p.id === projId) ?? cat?.projects[0];
+      if (!cat || !proj) return [];
+      return [{ project: proj, categoryId: cat.id, categoryName: cat.name, icon }];
+    });
+  });
 }

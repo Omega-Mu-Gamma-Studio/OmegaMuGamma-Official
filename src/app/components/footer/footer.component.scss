@@ -1,32 +1,96 @@
 .footer {
   border-top: 1px solid var(--line-border);
-  background: var(--bg-alt);
-  margin-top: 4rem;
+  margin-top: 0;
 }
 
-.footer__inner {
-  padding-block: 2rem;
+.footer__top {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-block: 2.5rem;
 }
 
-.footer__tagline {
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.footer__brand-name {
   margin: 0;
-  font-size: 0.9rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--ink-primary);
+}
+
+.footer__brand-sub {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.footer__cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__cta-text {
+  margin: 0;
+  font-size: 0.88rem;
   color: var(--ink-soft);
 }
 
-.footer__meta {
-  font-size: 0.82rem;
-  color: var(--text-muted);
+.footer__cta-btn {
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--ink-primary);
+  color: var(--ink-primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: background 0.16s, color 0.16s;
+
+  &:hover {
+    text-decoration: none;
+    background: var(--ink-primary);
+    color: #fff;
+  }
+}
+
+.footer__bottom {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 0.75rem;
+  padding-block: 1rem 1.25rem;
+  border-top: 1px solid var(--line-border);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer__links {
+  display: flex;
+  gap: 1.25rem;
 
   a {
     color: var(--text-muted);
@@ -34,10 +98,7 @@
 
     &:hover {
       color: var(--accent);
+      text-decoration: none;
     }
   }
-}
-
-.footer__dot {
-  opacity: 0.6;
 }

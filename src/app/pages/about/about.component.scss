@@ -1,0 +1,162 @@
+.about-hero {
+  padding-block: 3.5rem 2rem;
+  max-width: 760px;
+}
+
+.about-hero__back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+
+  &:hover { color: var(--accent); }
+}
+
+.about-hero__eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.about-hero__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.about-hero__lead {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  max-width: 65ch;
+  margin: 0;
+}
+
+/* Philosophy */
+.about-philosophy {
+  padding-block: 3rem 4rem;
+}
+
+.about-philosophy__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.about-philosophy__card {
+  padding: 1.75rem;
+  border: 1px solid var(--line-border);
+  border-radius: var(--radius-md);
+  background: var(--bg-alt);
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+}
+
+.about-philosophy__icon {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.85rem;
+}
+
+/* Stack */
+.about-stack {
+  padding-block: 2rem 4rem;
+  border-top: 1px solid var(--line-border);
+}
+
+.about-stack__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.about-stack__sub {
+  margin: 0 0 2rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.about-stack__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-stack__group {
+  h4 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    li {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--ink-primary);
+    }
+  }
+}
+
+/* CTA */
+.about-cta {
+  padding-block: 4rem 5rem;
+}
+
+.about-cta__inner {
+  padding: 2.5rem 3rem;
+  background: var(--bg-dark);
+  border-radius: var(--radius-lg);
+  color: #fff;
+
+  h2 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.65);
+    max-width: 55ch;
+    font-size: 0.97rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.about-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius-sm);
+  background: var(--amber);
+  color: var(--bg-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+}

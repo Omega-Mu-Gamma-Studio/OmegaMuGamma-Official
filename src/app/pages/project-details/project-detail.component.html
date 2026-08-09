@@ -4,31 +4,60 @@
       &larr; {{ category()?.name }}
     </a>
 
-    <div class="project-detail__header">
-      <h1 class="project-detail__name">{{ proj.name }}</h1>
-      <span class="project-detail__status" [style.--status-color]="proj.statusColor">
-        {{ proj.status }}
-      </span>
+    <div class="project-detail__hero">
+      <div class="project-detail__hero-img">
+        <span class="project-detail__hero-placeholder">{{ category()?.icon }}</span>
+      </div>
+
+      <div class="project-detail__hero-info">
+        <div class="project-detail__header">
+          <h1 class="project-detail__name">{{ proj.name }}</h1>
+          <span class="project-detail__status" [style.--status-color]="proj.statusColor">
+            {{ proj.status }}
+          </span>
+        </div>
+
+        <p class="project-detail__description">{{ proj.description }}</p>
+
+        <ul class="project-detail__tech">
+          @for (item of proj.tech; track item) {
+            <li>{{ item }}</li>
+          }
+        </ul>
+
+        <div class="project-detail__links">
+          @if (proj.url) {
+            <a class="project-detail__link project-detail__link--primary" [href]="proj.url" target="_blank" rel="noopener">
+              Live Demo ↗
+            </a>
+          }
+          @if (proj.repo) {
+            <a class="project-detail__link" [href]="proj.repo" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          }
+        </div>
+      </div>
     </div>
 
-    <p class="project-detail__description">{{ proj.description }}</p>
-
-    <ul class="project-detail__tech">
-      @for (item of proj.tech; track item) {
-        <li>{{ item }}</li>
-      }
-    </ul>
-
-    <div class="project-detail__links">
+    <div class="project-detail__meta">
+      <div class="project-detail__meta-item">
+        <span class="project-detail__meta-label">Category</span>
+        <span class="project-detail__meta-value">{{ category()?.name }}</span>
+      </div>
+      <div class="project-detail__meta-item">
+        <span class="project-detail__meta-label">Status</span>
+        <span class="project-detail__meta-value" [style.color]="proj.statusColor">{{ proj.status }}</span>
+      </div>
+      <div class="project-detail__meta-item">
+        <span class="project-detail__meta-label">Stack size</span>
+        <span class="project-detail__meta-value">{{ proj.tech.length }} technologies</span>
+      </div>
       @if (proj.url) {
-        <a class="project-detail__link project-detail__link--primary" [href]="proj.url" target="_blank" rel="noopener">
-          Live Demo
-        </a>
-      }
-      @if (proj.repo) {
-        <a class="project-detail__link" [href]="proj.repo" target="_blank" rel="noopener">
-          View on GitHub
-        </a>
+        <div class="project-detail__meta-item">
+          <span class="project-detail__meta-label">Deployed</span>
+          <span class="project-detail__meta-value">Yes · Vercel</span>
+        </div>
       }
     </div>
   </section>

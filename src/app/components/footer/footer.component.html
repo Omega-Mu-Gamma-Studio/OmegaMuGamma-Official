@@ -1,14 +1,27 @@
 <footer class="footer">
-  <div class="footer__inner container">
-    <p class="footer__tagline">Part of the Omega Mu Gamma Studio open-source education toolkit.</p>
-    <div class="footer__meta">
-      <span>&copy; {{ year }} Omega Mu Gamma Studio</span>
-      <span class="footer__dot">&middot;</span>
-      <span>Nagercoil, Tamil Nadu</span>
-      <span class="footer__dot">&middot;</span>
-      <a href="https://github.com/Omega-Mu-Gamma-Studio/OmegaMuGamma-Official" target="_blank" rel="noopener">
-        GitHub
+  <div class="footer__top container">
+    <div class="footer__brand">
+      <span class="footer__brand-mark">Ω</span>
+      <div>
+        <p class="footer__brand-name">Omega Mu Gamma Studio</p>
+        <p class="footer__brand-sub">Student-run software studio · Nagercoil, Tamil Nadu</p>
+      </div>
+    </div>
+
+    <div class="footer__cta">
+      <p class="footer__cta-text">Interested in contributing or collaborating?</p>
+      <a class="footer__cta-btn" href="https://github.com/Omega-Mu-Gamma-Studio" target="_blank" rel="noopener">
+        Find us on GitHub ↗
       </a>
+    </div>
+  </div>
+
+  <div class="footer__bottom container">
+    <span>&copy; {{ year }} Omega Mu Gamma Studio</span>
+    <div class="footer__links">
+      <a routerLink="/">Home</a>
+      <a routerLink="/about">About</a>
+      <a href="https://github.com/Omega-Mu-Gamma-Studio/OmegaMuGamma-Official" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </footer>

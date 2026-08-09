@@ -1,25 +1,109 @@
-<section class="hero container">
-  <p class="hero__eyebrow">Omega Mu Gamma Studio</p>
-  <h1 class="hero__title">Mascot-guided learning tools for CS &amp; engineering</h1>
-  <p class="hero__subtitle">
-    Explore {{ projectCount() }} projects across {{ categories().length }} categories -
-    from interactive mascots that teach recursion to full lab simulators.
-  </p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__content container">
+    <p class="hero__eyebrow">Student-run · Nagercoil, Tamil Nadu</p>
+    <h1 class="hero__title">
+      We build<br />
+      <span class="hero__title-accent">real tools</span><br />
+      for real learners.
+    </h1>
+    <p class="hero__subtitle">
+      Omega Mu Gamma Studio is a student-run software studio at St. Xavier's Catholic College of Engineering.
+      We ship deployed educational apps — mascot-guided tutors, circuit simulators, 3D visualizers, and more.
+    </p>
+    <div class="hero__cta">
+      <a class="hero__btn hero__btn--primary" routerLink="/category/chan">Explore Projects →</a>
+      <a class="hero__btn" href="https://github.com/Omega-Mu-Gamma-Studio" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <span class="hero__stat-num">{{ projectCount() }}</span>
+        <span class="hero__stat-label">Deployed Projects</span>
+      </div>
+      <div class="hero__stat-divider" aria-hidden="true"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">{{ categories().length }}</span>
+        <span class="hero__stat-label">Product Categories</span>
+      </div>
+      <div class="hero__stat-divider" aria-hidden="true"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">500+</span>
+        <span class="hero__stat-label">Lessons Across Apps</span>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- BROWSE DISC -->
 <section class="disc-section container">
+  <div class="disc-section__header">
+    <h2 class="disc-section__title">Browse by category</h2>
+    <p class="disc-section__sub">Every project lives in one of {{ categories().length }} tracks — pick a category to dive in.</p>
+  </div>
   <app-disc />
 </section>
 
-<section class="categories container">
-  <h2 class="categories__title">All categories</h2>
-  <div class="categories__grid">
-    @for (category of categories(); track category.id) {
-      <a class="categories__card" [routerLink]="['/category', category.id]">
-        <span class="categories__icon">{{ category.icon }}</span>
-        <span class="categories__name">{{ category.name }}</span>
-        <span class="categories__count">{{ category.projects.length }} projects</span>
-      </a>
-    }
+<!-- FEATURED PROJECTS -->
+<section class="featured">
+  <div class="container">
+    <div class="featured__header">
+      <div>
+        <h2 class="featured__title">Featured projects</h2>
+        <p class="featured__sub">A handful of what we've shipped.</p>
+      </div>
+      <a class="featured__see-all" routerLink="/category/chan">See all →</a>
+    </div>
+
+    <div class="featured__grid">
+      @for (item of featured(); track item.project.id) {
+        <a class="featured__card" [routerLink]="['/category', item.categoryId, 'project', item.project.id]">
+          <div class="featured__card-img">
+            <span class="featured__card-placeholder">{{ item.icon }}</span>
+          </div>
+          <div class="featured__card-body">
+            <div class="featured__card-top">
+              <span class="featured__card-category">{{ item.categoryName }}</span>
+              <span class="featured__card-status" [style.--sc]="item.project.statusColor">{{ item.project.status }}</span>
+            </div>
+            <h3 class="featured__card-name">{{ item.project.name }}</h3>
+            <p class="featured__card-desc">{{ item.project.description }}</p>
+            <ul class="featured__card-tech">
+              @for (t of item.project.tech.slice(0, 3); track t) {
+                <li>{{ t }}</li>
+              }
+            </ul>
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- DARK BAND: ABOUT STRIP -->
+<section class="about-band">
+  <div class="container about-band__inner">
+    <div class="about-band__text">
+      <h2 class="about-band__title">Built by students,<br>deployed for students.</h2>
+      <p class="about-band__body">
+        Every app in this catalog was designed, coded, and shipped by the team at Omega Mu Gamma Studio
+        as part of real coursework and extracurriculars at St. Xavier's. We believe the best way to learn
+        software is to build software people actually use.
+      </p>
+      <a class="about-band__link" routerLink="/about">Meet the studio →</a>
+    </div>
+    <div class="about-band__pills" aria-hidden="true">
+      <span>Angular</span>
+      <span>React</span>
+      <span>Ren'Py</span>
+      <span>Vite</span>
+      <span>TypeScript</span>
+      <span>Framer Motion</span>
+      <span>Zustand</span>
+      <span>Three.js</span>
+      <span>SCSS</span>
+      <span>Node.js</span>
+    </div>
   </div>
 </section>
